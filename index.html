@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Baby Piano</title>
+      <link rel="stylesheet" type="text/css" href="keyboard.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="lib/underscore.js"></script>
+      <script src="lib/backbone.js"></script>
+      <script src="lib/ejs.js"></script>
+      <script src="js/config.js"></script>
+      <script src="js/key-view.js"></script>
+      <script src="js/key.js"></script>
+      <script src="js/keyboard-view.js"></script>
+      <script src="js/log.js"></script>
+      <script src="js/application.js"></script>
+    </head>
+    <body>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="navbar-brand" href="./index.html">Piano</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row row-centered keyboard">
+        </div>
+
+        <div class="row log-container">
+          <div class="col-xs-12 col-sm-12">
+            <button class="btn btn-primary" type="button">
+              Key Log: 
+            </button>
+            <div class="log"></div>
+          </div>
+        </div>
+
+        <div class="row player">
+          <div class="col-xs-12 col-sm-12">
+            <button class="btn btn-success play" type="button">
+              Play: 
+            </button>
+            <input type="text" class="player-input">
+          </div>
+        </div>
+        
+      </div>
+
+    </body>
+</html>

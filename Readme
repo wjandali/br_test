@@ -1,0 +1,10 @@
+We're writing a mini keyboard that has keys which, when pressed,
+append to a log. Moreover, when a string of comma-separated letters 
+is passed to a keyboard, it plays its keys.
+
+We want a keyboard model.
+
+The keyboard model should have a collection of keys.
+
+The key collection should be comprised of keys, each of which has
+an associated character, 

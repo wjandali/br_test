@@ -1,0 +1,35 @@
+.key-col {
+  height: 300px;
+  vertical-align: bottom;
+  border-style: solid;
+  margin: 0;
+  padding: 0;
+}
+
+.key {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.row-centered {
+  text-align:center;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+}
+
+.log-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.log-container div {
+  display: inline;
+}
+
+.playing {
+  background-color: red;
+}
