@@ -11,6 +11,7 @@ App.keyView = Backbone.View.extend({
 
   log: function() {
     App.trigger('keypress', this.key);
+    this.light();
   },
 
   render: function() {
@@ -20,6 +21,14 @@ App.keyView = Backbone.View.extend({
 
   play: function() {
     this.$el.addClass('playing');
+  },
+
+  light: function() {
+    this.$el.addClass('playing');
+    var context = this;
+    setTimeout(function() {
+      context.$el.removeClass('playing');
+    }, 500);
   },
 
   end: function() {

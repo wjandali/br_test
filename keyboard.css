@@ -1,9 +1,20 @@
 .key-col {
-  height: 300px;
+  height: 400px;
   vertical-align: bottom;
   border-style: solid;
-  margin: 0;
-  padding: 0;
+  margin-left: -2px !important;
+  margin-right: -2px !important;
+  padding: 0 !important;
+  border-color: black;
+  font-size: 40px;
+}
+
+.key-col:first-of-type {
+  border-left-width: 6px;
+}
+
+.key-col:last-of-type {
+  border-right-width: 6px;
 }
 
 .key {
@@ -17,8 +28,9 @@
 }
 
 .col-centered {
-  display:inline-block;
-  float:none;
+  display: inline-block;
+  float: none !important;
+  margin: 0 auto;
 }
 
 .log-container {
@@ -32,4 +44,32 @@
 
 .playing {
   background-color: red;
+}
+
+.black-key {
+  background-color: black;
+  height: 200px;
+  position: absolute !important;
+  top: 0;
+  width: 55px !important;
+}
+
+.black-key.one {
+  left: 355px;
+}
+
+.black-key.two {
+  left: 455px;
+}
+
+.black-key.three {
+  left: 652px;
+}
+
+.black-key.four {
+  left: 752px;
+}
+
+.black-key.five {
+  left: 852px;
 }
