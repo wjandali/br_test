@@ -24,10 +24,10 @@ App.keyView = Backbone.View.extend({
   },
 
   light: function() {
-    this.$el.addClass('playing');
+    this.play();
     var context = this;
     setTimeout(function() {
-      context.$el.removeClass('playing');
+      context.end();
     }, 500);
   },
 

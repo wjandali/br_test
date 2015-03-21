@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 
   $('button.play').click(function() {
-    App.trigger('play-notes', $('.player-input').val());
+    App.trigger('play-notes', $('.player-input').val().replace(/ /g,''));
   });
 
 });
